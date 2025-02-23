@@ -1,5 +1,5 @@
 {
-    "name": "roman444uk/elastic-apm-laravel",
+    "name": "roman444uk/laravel-elastic-apm",
     "description": "Laravel APM agent for Elastic v2 intake API",
     "keywords": [
         "laravel",
