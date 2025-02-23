@@ -1,0 +1,58 @@
+{
+    "name": "arkaitzgarro/elastic-apm-laravel",
+    "description": "Laravel APM agent for Elastic v2 intake API",
+    "keywords": [
+        "laravel",
+        "elastic",
+        "apm"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arkaitz Garro",
+            "email": "arkaitz.garro@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "http-interop/http-factory-guzzle": "^1.0",
+        "illuminate/database": "^10.0|^11.0",
+        "illuminate/http": "^10.0|^11.0",
+        "illuminate/routing": "^10.0|^11.0",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/contracts": "^10.0|^11.0",
+        "jasny/persist-sql-query": "^2.0",
+        "nipwaayoni/elastic-apm-php-agent": "^8.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "^5",
+        "codeception/mockery-module": "^0.5",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "orchestra/testbench": "^8.0|^9.0",
+        "php-http/guzzle7-adapter": "^1.0.0",
+        "symfony/service-contracts": "^2.0|^3.0"
+    },
+    "suggest": {
+        "php-http/guzzle6-adapter": "Guzzle Http client adapter for guzzlehttp/guzzle version 6",
+        "php-http/guzzle7-adapter": "Guzzle Http client adapter for guzzlehttp/guzzle version 7"
+    },
+    "autoload": {
+        "psr-4": {
+            "AG\\ElasticApmLaravel\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AG\\ElasticApmLaravel\\ServiceProvider"
+            ]
+        }
+    }
+}
